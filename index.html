@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Titulo -->
+    <title>Desafio Grupo Acert</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS Geral -->
+    <link rel="stylesheet" href="assets/css/application.css">
+
+    <!-- Api para animação -->
+    <link rel='stylesheet' href='http://fian.my.id/marka/static/marka/css/marka.css'>
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- Animação do background -->
+        <div class="small-glows"></div>
+
+        <div class="glow"><div class="sun"></div></div>
+
+        <div class="waves">
+            <div class="top_wave"></div>
+            <div class="wave1"></div>
+            <div class="wave2"></div>
+            <div class="wave3"></div>
+            <div class="wave4"></div>
+        </div>
+
+        <div class="mounts">
+            <div class="mount1"></div>
+            <div class="mount2"></div>
+        </div>
+
+        <div class="clouds"></div>
+
+        <div class="noise"></div>
+        <!-- fim do Animação do background -->
+
+        <div class="row">
+            <!-- Input da Cidade -->
+            <div class="col offset-md-1">
+                <div class="input-group input-cidade mb-5">
+                    <input name="cidade" type="text" placeholder="Informe a cidade">
+                </div>
+            </div>
+            <!-- fim do input da Cidade -->
+            <!-- Dropdown dos estados -->
+            <div class="col">
+                <div class="input-group input-uf mb-5">
+                    <div class="button-group">
+                        <i id="icon"></i>
+                        <a name="uf" id="input" href="">Informe o estado</a>
+                        <ul id="dropdown-menu">
+                            <li><a href="#">AC</a></li>
+                            <li><a href="#">AL</a></li>
+                            <li><a href="#">AP</a></li>
+                            <li><a href="#">AM</a></li>
+                            <li><a href="#">BA</a></li>
+                            <li><a href="#">CE</a></li>
+                            <li><a href="#">DF</a></li>
+                            <li><a href="#">ES</a></li>
+                            <li><a href="#">GO</a></li>
+                            <li><a href="#">MA</a></li>
+                            <li><a href="#">MT</a></li>
+                            <li><a href="#">MS</a></li>
+                            <li><a href="#">MG</a></li>
+                            <li><a href="#">PA</a></li>
+                            <li><a href="#">PB</a></li>
+                            <li><a href="#">PR</a></li>
+                            <li><a href="#">PE</a></li>
+                            <li><a href="#">PI</a></li>
+                            <li><a href="#">RJ</a></li>
+                            <li><a href="#">RN</a></li>
+                            <li><a href="#">RS</a></li>
+                            <li><a href="#">RO</a></li>
+                            <li><a href="#">RR</a></li>
+                            <li><a href="#">SC</a></li>
+                            <li><a href="#">SP</a></li>
+                            <li><a href="#">SE</a></li>
+                            <li><a href="#">TO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fim do dropdown dos estados -->
+            <!-- button de busca -->
+            <div class="col offset-md-1">
+                <button class="btn btn-3 btn-3e icon-arrow-right" onclick="consultaAPI()">Buscar</button>
+            </div>
+            <!-- fim do button de busca -->
+        </div>
+
+        <!-- Card da previsão do tempo -->
+        <div class="row mb-5" id="weather-wrapper"></div>
+
+        <a id="modal_trigger" href="#modal"></a>
+
+        <!-- Pop-up de erro -->
+        <div id="modal" class="popupContainer" style="display:none;">
+            <section class="popupBody">
+                <div id="container">
+                    <div id="error-box">
+                        <div class="dot modal_close">x</div>
+                        <div class="face">
+                            <div class="eye"></div>
+                            <div class="eye right"></div>
+                            <div class="mouth sad"></div>
+                        </div>
+                        <div class="shadow move"></div>
+                        <div class="message">
+                            <h1 class="alert">Ops!</h1>
+                            <p class="info-txt">Por favor, verifique novamente a <b>Cidade</b> e o <b>Estado</b>.</p>
+                        </div>
+                        <button class="button-box">
+                            <span class="button-text modal_close">Tente Novamente</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- fim do pop-up de erro -->
+    </div>
+
+    <!-- jQuery v3.2.1 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Script API climatempo -->
+    <script type="text/javascript" src="assets/js/api-climatempo.js"></script>
+    <!-- TweenMax -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <!-- Script Animação background -->
+    <script type="text/javascript" src="assets/js/animacao-background.js"></script>
+    <!-- marka -->
+    <script src='http://fian.my.id/marka/static/marka/js/marka.js'></script>
+    <!-- Script dropdown -->
+    <script type="text/javascript" src="assets/js/dropdown.js"></script>
+    <!-- leanModal -->
+    <script src='https://andwecode.com/wp-content/uploads/2015/10/jquery.leanModal.min_.js'></script>
+
+</body>
+</html>
