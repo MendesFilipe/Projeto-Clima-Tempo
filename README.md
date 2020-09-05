@@ -1,25 +1,18 @@
-# [Projeto Clima Tempo](http://unitwork.com.br/index.html)
+# Projeto Clima Tempo
 
-## Preview:
-### Desktop
-![](http://unitwork.com.br/projeto-video1.gif)
+### Verificar o clima da sua cidade:earth_americas:
 
-### Mobile
-![](http://unitwork.com.br/projeto-video2.gif)
+Projeto utilizando a API de previsão do tempo, ClimaTempo, para ver a previsão do tempo da sua cidade e dos dois próximos dias.
 
-## Status
+Link do projeto: https://projeto-clima-tempo.vercel.app/
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-creative/master/LICENSE)
+## ⚡ Technologies
 
-## Validando Cenarios:
-### Erro Desktop
-![](http://unitwork.com.br/projeto-video3.gif)
-
-### Erro Mobile
-![](http://unitwork.com.br/projeto-video4.gif)
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
+![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
 
 ## Download e execução
 
 * Não é necessario instalar nenhum componente 
 * Clonar o repositório: `git clone https://github.com/MendesFilipe/Projeto-Clima-Tempo.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/MendesFilipe/Projeto-Clima-Tempo.git)
