@@ -4,7 +4,7 @@
 
 Projeto utilizando a API de previsão do tempo, ClimaTempo, para ver a previsão do tempo da sua cidade e dos dois próximos dias.
 
-Link do projeto: https://projeto-clima-tempo.vercel.app/
+Link do projeto: http://devfilipemendes.com/clima.html
 
 ## ⚡ Tecnologias
 
