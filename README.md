@@ -16,3 +16,7 @@ Link do projeto: http://devfilipemendes.com/clima.html
 
 * Não é necessario instalar nenhum componente 
 * Clonar o repositório: `git clone https://github.com/MendesFilipe/Projeto-Clima-Tempo.git`
+
+## Licença ⚖
+
+Esse projeto possui a licença **MIT**.
